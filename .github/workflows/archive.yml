@@ -15,10 +15,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
-      - name: Login
-        run: |
-          gh auth login
       - name: Set Archive HEAD
         run: |
           gh repo set-default adachi-team/docs
