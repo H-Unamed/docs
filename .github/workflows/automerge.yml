@@ -25,10 +25,11 @@ jobs:
       - name: Get PR details
         id: pr-details
         run: |
-          echo "contributor=$(curl -s -X GET \
+          echo "getcontributor=$(curl -s -X GET \
           -H \"Accept: application/vnd.github.v3+json\" \
           https://api.github.com/repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/ \
-          | jq -r '.head.user.login')" >> $CONTRIBUTOR
+          | jq -r '.head.user.login')"
+          echo "$getcontributor" >> "$CONTRIBUTOR"
           echo ${{ github.repository }}
           echo ${{ github.event.pull_request.number }}
           echo "$CONTRIBUTOR"
