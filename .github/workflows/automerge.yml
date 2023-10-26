@@ -18,14 +18,21 @@ on:
       - completed
   status: {}
 jobs:
-  automerge:
+  check-contributor:
     runs-on: ubuntu-latest
-    steps:
-      - id: automerge
-        name: automerge
-        uses: "pascalgn/automerge-action@v0.15.6"
-        env:
-          GITHUB_TOKEN: "${{ secrets.ACCESS_TOKEN }}"
-          BASE_BRANCHES: main
-          MERGE_LABELS: ""
-          MERGE_FILTER_AUTHOR: H-Unamed
+    
+    steps:      
+      - name: Get PR details
+        id: pr-details
+        run: |
+          echo "getcontributor=$(curl -s -X GET -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }} | jq -r '.head.user.login')" >> "$GITHUB_ENV"
+      
+      - name: Check contributor
+        run: |
+          contributor="$getcontributor"
+          if [ "$contributor" != "H-Unamed" ]; then
+            echo "Contributor is not H-Unamed"
+            exit 1
+          fi
+          
+          echo "Contributor is H-Unamed, continue with other steps"
