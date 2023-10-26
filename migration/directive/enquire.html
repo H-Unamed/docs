@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>指令 Enquire 重写 | Adachi-Docs</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="Adachi-BOT 文档">
+    
+    <link rel="preload" href="/assets/css/0.styles.1c919299.css" as="style"><link rel="preload" href="/assets/js/app.ed334d0b.js" as="script"><link rel="preload" href="/assets/js/2.942664c7.js" as="script"><link rel="preload" href="/assets/js/68.aea4c458.js" as="script"><link rel="prefetch" href="/assets/js/10.3571da06.js"><link rel="prefetch" href="/assets/js/11.c5ab237a.js"><link rel="prefetch" href="/assets/js/12.d0a18ad6.js"><link rel="prefetch" href="/assets/js/13.888d9012.js"><link rel="prefetch" href="/assets/js/14.a84d5fd6.js"><link rel="prefetch" href="/assets/js/15.096ad498.js"><link rel="prefetch" href="/assets/js/16.170ab22a.js"><link rel="prefetch" href="/assets/js/17.0f32d414.js"><link rel="prefetch" href="/assets/js/18.f31892df.js"><link rel="prefetch" href="/assets/js/19.deafdeb1.js"><link rel="prefetch" href="/assets/js/20.2a9f4f43.js"><link rel="prefetch" href="/assets/js/21.c0bf7aef.js"><link rel="prefetch" href="/assets/js/22.0a33ee11.js"><link rel="prefetch" href="/assets/js/23.be03779e.js"><link rel="prefetch" href="/assets/js/24.ad62e343.js"><link rel="prefetch" href="/assets/js/25.1282ff8c.js"><link rel="prefetch" href="/assets/js/26.09721aed.js"><link rel="prefetch" href="/assets/js/27.d345a713.js"><link rel="prefetch" href="/assets/js/28.d3600724.js"><link rel="prefetch" href="/assets/js/29.e3fa526a.js"><link rel="prefetch" href="/assets/js/3.898d75ff.js"><link rel="prefetch" href="/assets/js/30.9c0fa053.js"><link rel="prefetch" href="/assets/js/31.604e081b.js"><link rel="prefetch" href="/assets/js/32.3eb01202.js"><link rel="prefetch" href="/assets/js/33.1a383028.js"><link rel="prefetch" href="/assets/js/34.fc169ae4.js"><link rel="prefetch" href="/assets/js/35.ee7f5737.js"><link rel="prefetch" href="/assets/js/36.59a1564e.js"><link rel="prefetch" href="/assets/js/37.e64dfcf4.js"><link rel="prefetch" href="/assets/js/38.4e663279.js"><link rel="prefetch" href="/assets/js/39.4c6cca37.js"><link rel="prefetch" href="/assets/js/4.c80cbfa5.js"><link rel="prefetch" href="/assets/js/40.0a66a0fc.js"><link rel="prefetch" href="/assets/js/41.b6ff87dd.js"><link rel="prefetch" href="/assets/js/42.7a8e7ffe.js"><link rel="prefetch" href="/assets/js/43.22e68225.js"><link rel="prefetch" href="/assets/js/44.925b24da.js"><link rel="prefetch" href="/assets/js/45.b31d72e4.js"><link rel="prefetch" href="/assets/js/46.56f4501b.js"><link rel="prefetch" href="/assets/js/47.8ae6f6fe.js"><link rel="prefetch" href="/assets/js/48.a6e3f4c3.js"><link rel="prefetch" href="/assets/js/49.41eaa661.js"><link rel="prefetch" href="/assets/js/5.eb4c0528.js"><link rel="prefetch" href="/assets/js/50.0471f5ff.js"><link rel="prefetch" href="/assets/js/51.33c1f687.js"><link rel="prefetch" href="/assets/js/52.ed71bb23.js"><link rel="prefetch" href="/assets/js/53.9bafa42b.js"><link rel="prefetch" href="/assets/js/54.8a67e01a.js"><link rel="prefetch" href="/assets/js/55.8fc1ce80.js"><link rel="prefetch" href="/assets/js/56.d596a383.js"><link rel="prefetch" href="/assets/js/57.881ed200.js"><link rel="prefetch" href="/assets/js/58.e27454d7.js"><link rel="prefetch" href="/assets/js/59.1060d240.js"><link rel="prefetch" href="/assets/js/6.c8173dfa.js"><link rel="prefetch" href="/assets/js/60.3e4fa5a2.js"><link rel="prefetch" href="/assets/js/61.8026d9fd.js"><link rel="prefetch" href="/assets/js/62.cbafd9e2.js"><link rel="prefetch" href="/assets/js/63.ffe2670a.js"><link rel="prefetch" href="/assets/js/64.9567c2c4.js"><link rel="prefetch" href="/assets/js/65.14267a49.js"><link rel="prefetch" href="/assets/js/66.8cd848f7.js"><link rel="prefetch" href="/assets/js/67.de32569b.js"><link rel="prefetch" href="/assets/js/69.f1b60c4b.js"><link rel="prefetch" href="/assets/js/7.ecc6bc5f.js"><link rel="prefetch" href="/assets/js/70.06dc80ad.js"><link rel="prefetch" href="/assets/js/71.09966c94.js"><link rel="prefetch" href="/assets/js/72.2e77fa61.js"><link rel="prefetch" href="/assets/js/73.7f37a3dd.js"><link rel="prefetch" href="/assets/js/74.a5526b7a.js"><link rel="prefetch" href="/assets/js/75.9ca96677.js"><link rel="prefetch" href="/assets/js/76.48760cc0.js"><link rel="prefetch" href="/assets/js/77.3fbbd36a.js"><link rel="prefetch" href="/assets/js/78.7e9dcdac.js"><link rel="prefetch" href="/assets/js/79.9c420614.js"><link rel="prefetch" href="/assets/js/8.d84bddc1.js"><link rel="prefetch" href="/assets/js/80.91b54209.js"><link rel="prefetch" href="/assets/js/81.a4d1a7b8.js"><link rel="prefetch" href="/assets/js/9.c36cbc09.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1c919299.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Adachi-Docs</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/deploy/install/" class="nav-link">
+  部署
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="配置" class="dropdown-title"><span class="title">配置</span> <span class="arrow down"></span></button> <button type="button" aria-label="配置" class="mobile-dropdown-title"><span class="title">配置</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/config/base.html" class="nav-link">
+  基本配置
+</a></li><li class="dropdown-item"><!----> <a href="/config/commands.html" class="nav-link">
+  指令配置
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="插件" class="dropdown-title"><span class="title">插件</span> <span class="arrow down"></span></button> <button type="button" aria-label="插件" class="mobile-dropdown-title"><span class="title">插件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/plugin/genshin/" class="nav-link">
+  genshin
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发者" class="dropdown-title"><span class="title">开发者</span> <span class="arrow down"></span></button> <button type="button" aria-label="开发者" class="mobile-dropdown-title"><span class="title">开发者</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/quick-start/" class="nav-link">
+  指南
+</a></li><li class="dropdown-item"><!----> <a href="/api/global/redis.html" class="nav-link">
+  API
+</a></li><li class="dropdown-item"><!----> <a href="/migration/guide/" class="nav-link">
+  v3 迁移文档
+</a></li></ul></div></div><div class="nav-item"><a href="/faq/" class="nav-link">
+  FAQ
+</a></div><div class="nav-item"><a href="/thank/" class="nav-link">
+  致谢
+</a></div><div class="nav-item"><a href="https://github.com/SilveryStar/Adachi-BOT" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/deploy/install/" class="nav-link">
+  部署
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="配置" class="dropdown-title"><span class="title">配置</span> <span class="arrow down"></span></button> <button type="button" aria-label="配置" class="mobile-dropdown-title"><span class="title">配置</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/config/base.html" class="nav-link">
+  基本配置
+</a></li><li class="dropdown-item"><!----> <a href="/config/commands.html" class="nav-link">
+  指令配置
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="插件" class="dropdown-title"><span class="title">插件</span> <span class="arrow down"></span></button> <button type="button" aria-label="插件" class="mobile-dropdown-title"><span class="title">插件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/plugin/genshin/" class="nav-link">
+  genshin
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发者" class="dropdown-title"><span class="title">开发者</span> <span class="arrow down"></span></button> <button type="button" aria-label="开发者" class="mobile-dropdown-title"><span class="title">开发者</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/quick-start/" class="nav-link">
+  指南
+</a></li><li class="dropdown-item"><!----> <a href="/api/global/redis.html" class="nav-link">
+  API
+</a></li><li class="dropdown-item"><!----> <a href="/migration/guide/" class="nav-link">
+  v3 迁移文档
+</a></li></ul></div></div><div class="nav-item"><a href="/faq/" class="nav-link">
+  FAQ
+</a></div><div class="nav-item"><a href="/thank/" class="nav-link">
+  致谢
+</a></div><div class="nav-item"><a href="https://github.com/SilveryStar/Adachi-BOT" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>指南</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/migration/guide/" class="sidebar-link">概览</a></li><li><a href="/migration/guide/feature.html" class="sidebar-link">新的增强功能</a></li><li><a href="/migration/guide/breaking-changes.html" class="sidebar-link">破坏性变更</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>项目环境</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/migration/environment/" class="sidebar-link">Cli 命令变更</a></li><li><a href="/migration/environment/redis.html" class="sidebar-link">Redis 版本变更</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>核心库</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/migration/core/" class="sidebar-link">重写的 Client 核心类</a></li><li><a href="/migration/core/config.html" class="sidebar-link">重构的 Config 核心类</a></li><li><a href="/migration/core/refresh.html" class="sidebar-link">Refresh 核心类变更</a></li><li><a href="/migration/core/utils.html" class="sidebar-link">通用工具类/方法</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>插件</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/migration/plugin/" class="sidebar-link">新的插件入口定义</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>指令</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/migration/directive/" aria-current="page" class="sidebar-link">新的指令入口定义</a></li><li><a href="/migration/directive/priority.html" class="sidebar-link">新指令属性 priority</a></li><li><a href="/migration/directive/order-match.html" class="sidebar-link">order 指令参数的匹配内容</a></li><li><a href="/migration/directive/enquire.html" aria-current="page" class="active sidebar-link">重写的 Enquire 指令</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="指令-enquire-重写"><a href="#指令-enquire-重写" class="header-anchor">#</a> 指令 Enquire 重写</h1> <p>鉴于 v2 的 <code>Enquire</code> 使用场景比较稀少，v3 对 <code>Enquire</code> 指令进行了重写，现在它除了名称相同以外与 v2 完全没有联系。</p> <p>新版的 <code>Enquire</code> 指令旨在实现 <strong>问答</strong> 的场景，如下：</p> <div class="language-text extra-class"><pre class="language-text"><code>Q: #ps
+A: 请发送你的账号 cookie 来绑定私人服务
+Q: ltuid=15......
+A: 绑定成功
+// 或在一定时间未回复时
+A: 操作超时
+</code></pre></div><p>新版 <code>Enquire</code> 的定义如下：</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">export</span> <span class="token keyword">type</span> <span class="token class-name">EnquireConfig</span> <span class="token operator">=</span> CommandCfg <span class="token operator">&amp;</span> <span class="token punctuation">{</span>
+    type<span class="token operator">:</span> Enquire<span class="token punctuation">[</span><span class="token string">&quot;type&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    headers<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    timeout<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>这样可能有些难以理解，我们可以把他解释为下面的结构：</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">interface</span> <span class="token class-name">EnquireConfig</span> <span class="token punctuation">{</span>
+    type<span class="token operator">:</span> <span class="token string">&quot;enquire&quot;</span><span class="token punctuation">;</span>
+    cmdKey<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    main<span class="token operator">:</span> <span class="token builtin">string</span> <span class="token operator">|</span> CommandEntry<span class="token punctuation">;</span>
+    desc<span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token builtin">string</span><span class="token punctuation">,</span> <span class="token builtin">string</span> <span class="token punctuation">]</span><span class="token punctuation">;</span>
+    headers<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    timeout<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+    detail<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    auth<span class="token operator">?</span><span class="token operator">:</span> AuthLevel<span class="token punctuation">;</span>
+    scope<span class="token operator">?</span><span class="token operator">:</span> MessageScope<span class="token punctuation">;</span>
+    display<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">boolean</span><span class="token punctuation">;</span>
+    ignoreCase<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">boolean</span><span class="token punctuation">;</span>
+    start<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">boolean</span><span class="token punctuation">;</span>
+    stop<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">boolean</span><span class="token punctuation">;</span>
+    priority<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>可以看出，其相对 <code>Order</code> 来说，移除了 <code>regexps</code> 属性，新增了 <code>timeout</code> 属性。</p> <p>目前认为，问答式指令并没有参数输入的需求，因此移除了 <code>regexps</code> 配置。
+而 <code>timeout</code> 属性则用来控制“回答”的最长等待时间，单位<strong>秒</strong>。若你填写 0 或小于 0 的值，将会被重置为默认的 <code>300s</code>。</p> <p>enquire 的入口函数定义与其他指令类似，仅修改类型参数即可：</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">defineDirective</span><span class="token punctuation">(</span> <span class="token string">&quot;enquire&quot;</span><span class="token punctuation">,</span> <span class="token keyword">async</span> i <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 指令逻辑</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>与其他指令对比，入口函数携带的 <code>i.matchResult</code> 发生了变化，格式如下：</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">export</span> <span class="token keyword">interface</span> <span class="token class-name">EnquireMatchResult</span> <span class="token punctuation">{</span>
+    type<span class="token operator">:</span> <span class="token string">&quot;enquire&quot;</span><span class="token punctuation">;</span>
+    header<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    status<span class="token operator">:</span> <span class="token string">&quot;activate&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;confirm&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;timeout&quot;</span><span class="token punctuation">;</span>
+    timeout<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>其中 <code>timeout</code> 为回答等待超时时间；<code>status</code> 三种状态分别对应：初次触发、用户回答、超时，在这三种事件出现时，均会携带对应的 <code>status</code> 执行入口函数。</p> <p>默认情况下，用户只需回答一次即可终止本次问答。指令也提供了一种方式来覆盖次默认行为： 当 <code>status</code> 的值为 <code>confirm</code> 时，使入口函数执行 <code>return false</code> 来禁止终止问答。
+通常这可以用来根据用户回答内容是否有效来决定是否结束问答。</p> <p>下面是一个 <code>enquire</code> 指令完整的案例：</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token comment">/* 指令配置 */</span>
+<span class="token keyword">const</span> qa<span class="token operator">:</span> EnquireConfig <span class="token operator">=</span> <span class="token punctuation">{</span>
+    type<span class="token operator">:</span> <span class="token string">&quot;enquire&quot;</span><span class="token punctuation">,</span>
+    cmdKey<span class="token operator">:</span> <span class="token string">&quot;adachi.test.enquire&quot;</span><span class="token punctuation">,</span>
+    desc<span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token string">&quot;问答测试&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    headers<span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token string">&quot;qa&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    main<span class="token operator">:</span> <span class="token string">&quot;achieves/qa&quot;</span><span class="token punctuation">,</span>
+    timeout<span class="token operator">:</span> <span class="token number">180</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">/* achieves/qa.ts */</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">defineDirective</span><span class="token punctuation">(</span> <span class="token string">&quot;enquire&quot;</span><span class="token punctuation">,</span> <span class="token keyword">async</span> i <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span> i<span class="token punctuation">.</span>matchResult<span class="token punctuation">.</span>status <span class="token operator">===</span> <span class="token string">&quot;activate&quot;</span> <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">await</span> i<span class="token punctuation">.</span><span class="token function">sendMessage</span><span class="token punctuation">(</span> <span class="token string">&quot;请发送你的问题&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span> i<span class="token punctuation">.</span>matchResult<span class="token punctuation">.</span>status <span class="token operator">===</span> <span class="token string">&quot;timeout&quot;</span> <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">await</span> i<span class="token punctuation">.</span><span class="token function">sendMessage</span><span class="token punctuation">(</span> <span class="token string">&quot;操作已超时，会话终止&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span> i<span class="token punctuation">.</span>matchResult<span class="token punctuation">.</span>status <span class="token operator">===</span> <span class="token string">&quot;confirm&quot;</span> <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 通过 i.messageData.raw_message 获取用户发送内容</span>
+            <span class="token keyword">const</span> answer <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">answerQuestion</span><span class="token punctuation">(</span> i<span class="token punctuation">.</span>messageData<span class="token punctuation">.</span>raw_message <span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">await</span> i<span class="token punctuation">.</span><span class="token function">sendMessage</span><span class="token punctuation">(</span> answer <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">{</span>
+            <span class="token keyword">await</span> i<span class="token punctuation">.</span><span class="token function">sendMessage</span><span class="token punctuation">(</span> <span class="token string">&quot;你的问题我无法回答，请重新提问&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span> <span class="token comment">// 不终止会话，继续等待提问</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后编辑于:</span> <span class="time">10/26/2023, 10:18:25 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/migration/directive/order-match.html" class="prev">
+        order 指令参数的匹配内容
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.ed334d0b.js" defer></script><script src="/assets/js/2.942664c7.js" defer></script><script src="/assets/js/68.aea4c458.js" defer></script>
+  </body>
+</html>
