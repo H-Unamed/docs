@@ -26,5 +26,7 @@ jobs:
 
       - name: Create Archive PR
         run: |
-          gh auth login --with-token ${{ secrets.ACCESS_TOKEN }}
+          gh auth login
           gh pr create --base archive --head main --title "Archive PR" --body "This is an archive PR created automatically after merging to main branch."
+        env: 
+          GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
