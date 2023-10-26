@@ -27,4 +27,5 @@ jobs:
         env:
           GITHUB_TOKEN: "${{ secrets.ACCESS_TOKEN }}"
           BASE_BRANCHES: main
+          MERGE_LABELS: ""
           MERGE_FILTER_AUTHOR: H-Unamed
