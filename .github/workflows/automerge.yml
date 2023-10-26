@@ -31,11 +31,11 @@ jobs:
           | jq -r '.head.user.login')" >> $CONTRIBUTOR
           echo ${{ github.repository }}
           echo ${{ github.event.pull_request.number }}
-          echo $CONTRIBUTOR
+          echo "$CONTRIBUTOR"
       
       - name: Check contributor
         run: |
-          contributor=$CONTRIBUTOR
+          contributor="$CONTRIBUTOR"
           if [ "$contributor" != "H-Unamed" ]; then
             echo "Contributor is not H-Unamed"
             exit 1
